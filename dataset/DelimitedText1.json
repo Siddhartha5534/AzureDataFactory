@@ -1,0 +1,29 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "WORKCENTRE.txt",
+				"folderPath": "Email",
+				"container": "siddemostoragecontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "300062|0007|DPU1|0000114014|5K|6K||0017013055|||000||E|Fredericton DPU / UTD Fredericton|FREDERICTON DPU / UTD FREDERICTON|00000000|00010101|99991231|00000000||||||||E3A 2W2|E3A 2W2|35 Hughes Street||||CA|E|NB|EST||E||||||||||||||Production line(DPU)||",
+				"type": "String"
+			}
+		]
+	}
+}
